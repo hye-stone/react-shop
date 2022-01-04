@@ -1,12 +1,95 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.background {
+  background-image: url(./images/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  height: 44vw;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.background1 {
+  background-image: url(./images/background3.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  height: 40vw;
+  width: 100%;
+  background-position: center;
+  margin-top: 100px;
+}
+.textBox {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.container {
+  padding-top: 30px;
+}
+.item {
+  padding-bottom: 20px;
+}
+.item > img {
+  padding-bottom: 15px;
+}
+.imgHover:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+}
+.imgHover:hover .textBoxs {
+  opacity: 0;
+}
+.buyBtn {
+  opacity: 0;
+  position: relative;
+  top: -80px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.imgHover:hover .buyBtn {
+  opacity: 1;
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  @keyframes loader4 {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
+.path {
+  animation: loader4 1.5s linear infinite both;
+  transform-origin: center center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +118,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+footer {
+  position: relative;
+  width: 100%;
+  bottom: -20vw;
+}
+footer .main-footer {
+  padding: 20px 0;
+  background: black;
+}
+footer ul {
+  color: aliceblue;
+  padding-left: 0;
+  list-style: none;
+}
+.foot {
+  padding: 20px;
+  margin-bottom: 40px;
+  color: aliceblue;
+}
+.foot.subscribe p {
+  margin-bottom: 18px;
+  color: aliceblue;
+}
+.foot li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.foot li a:hover {
+  color: #4b9;
+}
+.foot-title {
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+ul.snsFooter li {
+  display: inline-block;
+  padding: 0 10px;
+}
+ul.snsFooter li a:hover {
+  background-color: rgb(18, 116, 201);
+}
+ul.snsFooter li a {
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+}
+ul.snsFooter li a img {
+  top: 50%;
+  transform: translateY(30%);
 }
