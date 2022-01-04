@@ -1,3 +1,38 @@
+
+# 📖 React (shopping-cart project)
+![React](https://img.shields.io/badge/React-v17.0.2-%2361DAFB?style=flat&logo=React&logoColor=#61DAFB&)
+![Rdux](https://img.shields.io/badge/Redux-v4.1.2-%23764ABC?style=flat&logo=Redux&logoColor=#764ABC)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.1.3-%237952B3?style=flat&logo=Bootastrap&logoColor=#764ABC)
+![npm](https://img.shields.io/badge/npm-v8.1.2-black)
+![node](https://img.shields.io/badge/node-v16.13.1-black)
+
+ 
+- 상품 페이지에서 상품을 보고 상품을 누르면 각각의 `detail 페이지`로 이동한다.
+- `detail 페이지`에서 구매하기 버튼을 누르면 `장바구니 페이지`로 이동하며 상품이 자동으로 추가된다.
+- 같은 상품이 이미 장바구니에 있으면 `alert`와 함께 수량 `1이` 추가된다.
+- 상품은 최소한 `1개`의 수량을 가지고 있으며, `10개`까지 구매할 수 있다.
+- 장바구니에 담긴 상품은 브라우저를 `새로고침(reload)`해도 유지된다.
+- 최근 본 상품은 detail 페이지에서 사이드바로 최대 `6상품`을 보여준다.
+ 
+## ⏱ Project Period
+2021.12.21 ~ 2021.12.28 (총 8일)
+
+## 🔎 Directory Structure
+```bash
+└── src
+    ├── App.js
+    ├── App.css
+    ├── Detail.js
+    ├── Detail.scss
+    ├── Cart.js
+    ├── Cart.css
+    ├── index.js
+    ├── index.css
+    ├── data.js
+    └── App.test.js
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
