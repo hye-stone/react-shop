@@ -6,6 +6,7 @@
 ![npm](https://img.shields.io/badge/npm-v8.1.2-black)
 ![node](https://img.shields.io/badge/node-v16.13.1-black)
 
+Demo: https://hye-stone.github.io/
  
 - 상품 페이지에서 상품을 보고 상품을 누르면 각각의 `detail 페이지`로 이동한다.
 - `detail 페이지`에서 구매하기 버튼을 누르면 `장바구니 페이지`로 이동하며 상품이 자동으로 추가된다.
